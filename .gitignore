@@ -5,3 +5,8 @@
 *.png
 *.dcm
 *.nii
+
+# cache files
+*.iml
+*.pyc
+*.xml
