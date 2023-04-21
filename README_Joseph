@@ -1,0 +1,9 @@
+Flask라면 웹없이 inference할 수 있습니다.
+다만 내부적으로만 사용하기 때문에 FastAPI처럼 각각 분류되지 않고
+covid-vascular-volume은 섞여 있고 TB만 따로 분리되어 있습니다.
+--
+1) 웨이트를 checkpoints 폴더에 복사하시면 됩니다.
+2) 참고를 위해서 Library 목록은 anaconda.yml에 있습니다.
+3) 2 창을 열어서 한 창은 python predict.py를 실행하고 한 창은 python request.py 혹은 python request_snuhtb2.py를 실행하시면 됩니다.
+request.py ->COVID/Vessel + Volume predict request
+request_snuhtb2.py -> TB predict request
